@@ -4,37 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        form {
+            margin-top: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 4px;
+            font-weight: 600;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"] {
+            width: 100%;
+            max-width: 400px;
+            padding: 8px;
+            margin-bottom: 12px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .form-actions {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .back-link {
+            text-decoration: none;
+            font-size: 0.95rem;
+            color: #2c3e50;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-<header>
-    <h1>Contact Me</h1>
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="contact.html">Contact Me</a>
-    </nav>
-</header>
+<div class="container">
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="contact.html">Contact Me</a>
+        </nav>
+    </header>
 
-<main>
-    <section>
-        <h2>Get in Touch</h2>
-        <form action="#" method="get">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
+    <main>
+        <section>
+            <h2>Get in Touch</h2>
+            <form action="#" method="get">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-            <label for="phone">Phone:</label><br>
-            <input type="tel" id="phone" name="phone" required><br><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-            <a href="index.html">Back</a>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-</main>
+                <div class="form-actions">
+                    <a href="index.html" class="back-link">Back</a>
+                    <!-- Button styling comes from external CSS. -->
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
 
-<footer>
-    <p>© 2025 My Biodata Page</p>
-</footer>
+    <footer>
+        <p>© 2025 My Biodata Page</p>
+    </footer>
+</div>
 </body>
 </html>

@@ -4,25 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Biodata</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .biodata-section {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .biodata-section img {
+            border-radius: 10px;
+            border: 2px solid #2c3e50;
+        }
+
+        .biodata-text p {
+            margin-bottom: 6px;
+        }
+    </style>
 </head>
 <body>
-<header>
-    <h1>My Biodata</h1>
-</header>
+<div class="container">
+    <header>
+        <h1 style="color: #2c3e50;">My Biodata</h1>
 
-<main>
-    <section>
-        <img src=".idea/MyPhoto.jpg" height="250" width="200"/>
-        <p><strong>Full Name:</strong> Muhammad Hafizzul Hakim Bin Roslee</p>
-        <p><strong>Student ID:</strong> 99926</p>
-        <p><strong>Programme:</strong> Bachelor of Cognitive Science</p>
-        <p><strong>Birthday:</strong> 2003-04-30</p>
-        <p><strong>Hometown:</strong> Pontian, Johor</p>
-    </section>
-</main>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="contact.html">Contact Me</a>
+        </nav>
+    </header>
 
-<footer>
-    <p>© 2025 My Biodata Page</p>
-</footer>
+    <main>
+        <section class="biodata-section">
+            <img src="images/MyPhoto.jpg" height="250" width="200" alt="My Photo">
+            <div class="biodata-text">
+                <p><strong>Full Name:</strong> Muhammad Hafizzul Hakim Bin Roslee</p>
+                <p><strong>Student ID:</strong> 99926</p>
+                <p><strong>Programme:</strong> Bachelor of Cognitive Science</p>
+                <p><strong>Birthday:</strong> 2003-04-30</p>
+                <p><strong>Hometown:</strong> Pontian, Johor</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 My Biodata Page</p>
+    </footer>
+</div>
 </body>
 </html>
